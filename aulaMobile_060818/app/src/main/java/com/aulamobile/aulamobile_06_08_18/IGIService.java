@@ -8,7 +8,7 @@ import retrofit2.http.Path;
 
 public interface IGIService {
 
-    @GET("users/(user)/repos")
+    @GET("users/{user}/repos")
     Call<List<Repo>> listRepos(@Path("user") String user);
 
 }
